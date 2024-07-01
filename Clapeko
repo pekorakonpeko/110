@@ -9898,4 +9898,4 @@ rules:
   - DOMAIN-KEYWORD,Thunder,🎯 全球直连
   - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼InBvcnQiOiAxMDAwMCwKICAiaWQiOiAiNTEyNjJmODctNzY3ZS00Y2ZmLWE2MWUtZWQyOWJhNDkxMDg5IiwKICAiYWlkIjogMCwKICAibmV0IjogIndzIiwKICAidHlwZSI6ICJub25lIiwKICAiaG9zdCI6ICIiLAogICJwYXRoIjogIi9rb25wZWtvIiwKICAidGxzIjogInRscyIKfQ%3D%3D&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=true&fdn=false&expand=true&sort=false&new_name=true
+  - MATCH,🐟 漏网之鱼
