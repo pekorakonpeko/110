@@ -5,27 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: pekopeko_hc400, server: usada.pekopeko.icu, port: 10090, type: vmess, uuid: ad43f0dd-fd99-44c9-c473-515dcd7273fd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /konpeko, headers: {Host: usada.pekopeko.icu}}}
+  - {name: peko_hc400, server: usada.pekopeko.store, port: 10011, type: vmess, uuid: cf3e5662-f0b0-4b33-8683-54a630c5a8c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /konpeko, headers: {Host: usada.pekopeko.store}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - pekopeko_hc400
+      - peko_hc400
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - pekopeko_hc400
+      - peko_hc400
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - pekopeko_hc400
+      - peko_hc400
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,7 +44,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - pekopeko_hc400
+      - peko_hc400
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -55,20 +55,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - pekopeko_hc400
+      - peko_hc400
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - pekopeko_hc400
+      - peko_hc400
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - pekopeko_hc400
+      - peko_hc400
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - pekopeko_hc400
+      - peko_hc400
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
